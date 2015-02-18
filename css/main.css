@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body { 
+  font-family:'Lato';
+  color: #222229;
+}
+
+header{
+  background-color: white;
+  border: 5px;
+}
+
+h1{
+  text-align:center;
+  text-shadow: 2px 2px 2px lightgray;
+  color: #424242;
+  padding:0;
+  margin: 0;
+}
+
+h3{
+  text-align:center;
+  text-shadow: 2px 2px 2px lightgray;
+  color: #424242;
+  padding:0 0 2% 0;
+  margin: 0;
+}
+
+
+p{
+  padding: 0 5%;
+}
+
+/*#mainPic{
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+}
+*/
+
+
+.content{
+  background-color: white;
+  margin: 2%;
+}
+
+#navigation{
+  text-align: center;
+  background-color: lavender;
+  padding: 1px;
+  width: 100%;
+  border-bottom:2px solid pink; 
+  border-right:1px solid pink; 
+  box-shadow: 4px 4px 6px gray;
+  border-radius: 10px;
+}
+
+.aTitle:hover {
+  opacity: 1.0;  
+}
+
+.aTitle {
+  text-align: center;
+  opacity: .40;
+  list-style-type: none;
+  display: inline;
+  margin: 2%;
+  padding:0;
+}
+
+.formStyle{
+  padding: 5%;
+  margin: 5%;
+  background-color: lavender;
+  opacity: .9;
+  width: 80%;
+  border:2px solid lightgrey; 
+  box-shadow: 4px 4px 6px gray;
+  border-radius: 10px;
+}
+
+label{
+  padding: 5%;
+  width: 50%;
+  
+}
+
+input{
+  width: 50%;
+}
+
+.button{
+  text-align: center;
+}
+
+
+
