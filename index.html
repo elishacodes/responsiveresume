@@ -1,0 +1,126 @@
+<body> 
+<div class="container">
+  <header>
+    <h1>Elisha Williams</h1>
+    <h3>Developer</h2>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--    <img src="http://www.gravatar.com/avatar/671dc793868c65351e197eb369704064.png" id="mainPic">-->
+  </header>
+
+<!--This div holds the navigation stuff-->  
+  <div id="navigation">
+<!-- 
+The id's on the li's below are used to identify each navigation item later in on the javascript.  I named them with an h in front because I thought of them as headers for the top of the site.  so each has an id=hEducation, hSkills, hTech, etc.
+-->   
+    <ul>
+      <li class="aTitle" id="hEducation">Education</li>
+      <li class="aTitle" id="hSkills">Skills</li>
+      <li class="aTitle" id="hTech">Tech</li>
+      <li class="aTitle" id="hExperience">Experience</li>
+      <li class="aTitle" id="hContact">Contact</li>
+    </ul>
+  </div> 
+  
+<!--  This is the div that hold my entire resume content-->
+  <div id="main">  
+<!--    This first div hold a welcome message that i wanted to display as soon as you reach the site.  It has an id="welcome" It is handled in the JS so it shows on the initial load but is hidden when a nav item is clicked-->
+    <div id="welcome" class="content">
+      <p>WELCOME! <br><br>Thank you for taking the time to review my page.  I have worked in IT for over 10 years and love hands on development centering around making data accurate, available and actionable.</p>
+      <p>I would love an opportunity to chat  over a nice cup of tea about business intelligence, software development or the topic that most interests you.  </p>
+      <p>Feel free to look around, download my full resume and contact me.</p>
+      <p> 
+        ~The friendliest nerd you'll ever meet (Me)
+      </p>  
+    </div>
+
+    <!--This div has an id of tech and is shown only after the Tech nav item is clicked.  otherwise it is always hidden by js.  -->
+    <div class="aDetail aCollapsed content" id="tech">
+      <p>Business Objects XI – Web IntelligenceDesktop Intelligence, Full Client, LiveOffice, Dashboard Manager, Performance Manager</p>
+      <p>Business Objects Universe Design</p>
+      <p>SQL Queries</p>
+      <p>SQL Server 2005</p>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JQuery</p>
+      <p>GIT</p>    
+    </div>
+    <!--This div has an id of skills and is shown only after the Skills nav item is clicked.  otherwise it is always hidden by js.  -->
+    <div class="aDetail aCollapsed content" id="skills">
+      <p>Business Intelligence</p>
+      <p>Business Analysis</p>
+      <p>Software Development</p>
+      <p>Requirements Gathering</p>
+      <p>Project Management</p>
+      <p>QA Testing</p>
+      <p>End User Training & Documentation</p>
+    </div>
+    <!--This div has an id of education and is shown only after the Education nav item is clicked.  otherwise it is always hidden by js.  -->
+    <div class="aDetail aCollapsed content" id="education">
+      <p>(2015) 
+      <a href="http://nashvillesoftwareschool.com/program/foundations/" target="new">Front End Development Foundations</a>
+      &nbsp and &nbsp 
+      <a href="http://nashvillesoftwareschool.com/program/csharp/" target="new">C# and .NET</a>
+      - Nashville Software School  
+      </p>
+      <p>(2011) SCRUM Master Certification - 
+      <a href="http://braintrustgroup.com/class-descriptions/certified-scrummaster-csm/">Braintrust Group</a>
+      </p>
+      <p>(2004) BSBA Management Information Systems - <a href="http://www.uah.edu/cba/undergraduate/bachelors/information-systems" target="new">University of Alabama in Huntsville</a></p>
+    </div>
+    <!--This div has an id of experience and is shown only after the Experience nav item is clicked.  otherwise it is always hidden by js.  -->
+    <div class="aDetail aCollapsed content" id="experience">
+      <p><h4>Business Intelligence Developer | Collabera at AT&T (Remote) | 01/2014 to 12/2014</h4>
+      Business Impact: Interact with the user community to understand, validate their requirements and convert business requirements into professionally designed and accurate reporting solutions to aide with data analysis needs of multiple executive groups.
+      <ul>
+        <li>Report design, development & optimization.</li>
+        <li>Addressed and solve reporting performance issues.</li>
+        <li>Created executive level analytics using SAP Business Objects Web Intelligence and using Excel Advanced Charts and Pivots.</li>
+        <li>Process Improvement regarding running, storing and automating routine reports.</li>
+        <li>Created executive decks and automated ad hoc reporting requirements.</li>
+        <p><h4>Business Analyst | Teksystems at UNUM | Chattanooga, TN | 08/13-04/14</h4>
+        Business Impact: Using strong analytical, system skills and a thorough understanding of how to interpret customer business needs, developed operational and intelligent requirements and other documentation.
+        <li>Critically evaluates information gathered from multiple sources, reconcile information conflicts to distinguish and document user requests by focusing on the underlying true needs.</li>
+        <li>Liaison between the business units, technology teams, and support teams</li>
+      </p>    
+    </div>
+
+    <!--This div has an id of contact and is shown only after the Contact nav item is clicked.  otherwise it is always hidden by js.  -->    
+    <div class="aDetail aCollapsed content" id="contact">
+     
+      <form action="form.html"  method="POST">
+        <fieldset class="formStyle">
+          <legend>Tell me about yourself</legend>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" class="input-buffer">
+          <br>
+          <label for="last-name">Company</label>
+          <input id="last-name" type="text" name="last-name" class="input-buffer">
+          <br>
+          <label for="email-address">Email Address</label>
+          <input id="email-address" type="text" name="email-address" class="input-buffer">
+        </fieldset>
+
+        <fieldset class="formStyle">
+          <legend>Feedback</legend>
+          <label for="comments"> Comments</label>
+          <textarea id="comments" name="comments" class="input-buffer"></textarea>
+        </fieldset>
+
+        <label for="feedback-type">Comment Type</label>
+        <select id="feedback-type" name="type" class="input-buffer">
+          <option>Requesting convo over tea</option>
+          <option>General Comment</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit Comments</button>  
+
+      </form>  
+    </div>  <!--this closing div tag closes the Contact div-->
+    
+  </div> <!--this closing div tag closes the Main div-->
+  </div> <!--this closing div tag closes the container div-->
+  <script src="js/jquery.js"></script>  
+  <script src="js/main.js"></script>  
+</body>
